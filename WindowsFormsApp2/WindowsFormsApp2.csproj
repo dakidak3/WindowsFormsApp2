@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D39F0EC-BD42-4276-B57A-1A4434CD136F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp2</RootNamespace>
+    <AssemblyName>WindowsFormsApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Direktor\Direktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Direktor\Direktor.Designer.cs">
+      <DependentUpon>Direktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Constructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Constructor.designer.cs">
+      <DependentUpon>Constructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Kladov\FurnituraF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Kladov\FurnituraF.Designer.cs">
+      <DependentUpon>FurnituraF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Kladov\Klad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Kladov\Klad.Designer.cs">
+      <DependentUpon>Klad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Kladov\postup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Kladov\postup.Designer.cs">
+      <DependentUpon>postup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Kladov\Tkanisp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Kladov\Tkanisp.Designer.cs">
+      <DependentUpon>Tkanisp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Medjer\Menedj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Medjer\Menedj.Designer.cs">
+      <DependentUpon>Menedj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Medjer\SPizdeliy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Medjer\SPizdeliy.Designer.cs">
+      <DependentUpon>SPizdeliy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Registr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Registr.Designer.cs">
+      <DependentUpon>Registr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Zakazhik\zakaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Zakazhik\zakaz.Designer.cs">
+      <DependentUpon>zakaz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RegistrOsn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RegistrOsn.Designer.cs">
+      <DependentUpon>RegistrOsn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Заказ.cs" />
+    <Compile Include="ЗаказаныеИзделия.cs" />
+    <Compile Include="Изделие.cs" />
+    <Compile Include="Пользователь.cs" />
+    <Compile Include="СкладТкани.cs" />
+    <Compile Include="СкладФурнитуры.cs" />
+    <Compile Include="Ткань.cs" />
+    <Compile Include="Фурнитура.cs" />
+    <Compile Include="ФурнитураИзделия.cs" />
+    <EmbeddedResource Include="Forms\Direktor\Direktor.resx">
+      <DependentUpon>Direktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Constructor.resx">
+      <DependentUpon>Constructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Kladov\FurnituraF.resx">
+      <DependentUpon>FurnituraF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Kladov\Klad.resx">
+      <DependentUpon>Klad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Kladov\postup.resx">
+      <DependentUpon>postup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Kladov\Tkanisp.resx">
+      <DependentUpon>Tkanisp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Medjer\Menedj.resx">
+      <DependentUpon>Menedj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Medjer\SPizdeliy.resx">
+      <DependentUpon>SPizdeliy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Registr.resx">
+      <DependentUpon>Registr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Zakazhik\zakaz.resx">
+      <DependentUpon>zakaz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\RegistrOsn.resx">
+      <DependentUpon>RegistrOsn.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Заказ.datasource" />
+    <None Include="Properties\DataSources\ЗаказаныеИзделия.datasource" />
+    <None Include="Properties\DataSources\Изделие.datasource" />
+    <None Include="Properties\DataSources\Пользователь.datasource" />
+    <None Include="Properties\DataSources\СкладТкани.datasource" />
+    <None Include="Properties\DataSources\СкладФурнитуры.datasource" />
+    <None Include="Properties\DataSources\Ткань.datasource" />
+    <None Include="Properties\DataSources\Фурнитура.datasource" />
+    <None Include="Properties\DataSources\ФурнитураИзделия.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
